@@ -1,2 +1,3 @@
+fill links for assets and certificates, test the button
 fix link issues after clicking the home page cards
 fix all git repos

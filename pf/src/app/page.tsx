@@ -74,14 +74,14 @@ export default function Home() {
           </p>
           <div className="flex justify-center items-center gap-6">
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:shrivedpatade@gmail.com" 
               className="inline-block px-5 py-2 rounded-full font-semibold transition-transform duration-300 hover:scale-105"
               style={{backgroundColor: 'var(--orange-web)', color: 'var(--space-cadet)'}}
             >
               Email Me
             </a>
             <a 
-              href="https://www.linkedin.com/in/your-profile" 
+              href="https://www.linkedin.com/in/shrived-patade-313b66255/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block px-5 py-2 rounded-full font-semibold transition-transform duration-300 hover:scale-105"

@@ -1,12 +1,16 @@
 'use client';
 
-// No longer needs useState
 import type { projectsData } from '@/app/data/projects';
 
 type Project = typeof projectsData[0];
 
-// Update the props to receive isOpen and onToggle
 export default function ProjectCard({ project, isOpen, onToggle }: { project: Project; isOpen: boolean; onToggle: () => void }) {
+  // Checks if the assets link is actually filled with a real URL
+  const hasAssets = 
+    project.googleDriveLink && 
+    project.googleDriveLink.trim() !== '' && 
+    project.googleDriveLink !== 'your-google-drive-link-here';
+
   return (
     <div
       id={project.id}
@@ -15,7 +19,7 @@ export default function ProjectCard({ project, isOpen, onToggle }: { project: Pr
         backgroundColor: 'var(--delft-blue)',
         color: 'var(--ghost-white)',
       }}
-      onClick={onToggle} // Use the onToggle function passed from the parent
+      onClick={onToggle}
     >
       <h2 className="text-3xl font-bold mb-2" style={{ color: 'var(--orange-web)' }}>
         {project.title}
@@ -25,7 +29,7 @@ export default function ProjectCard({ project, isOpen, onToggle }: { project: Pr
       </p>
 
       <div
-        className="overflow-hidden transition-all duration-500 ease-in-out"
+        className="overflow-hidden transition-all duration-500 ease-in-out px-4 -mx-4 pb-4"
         style={{ maxHeight: isOpen ? '1000px' : '0px' }}
       >
         <div className="pt-4 border-t border-periwinkle/20">
@@ -52,16 +56,20 @@ export default function ProjectCard({ project, isOpen, onToggle }: { project: Pr
             >
               View Code (GitHub)
             </a>
-            <a
-              href={project.googleDriveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-5 py-2 rounded-full font-semibold transition-transform duration-300 hover:scale-105"
-              style={{backgroundColor: 'var(--orange-web)', color: 'var(--space-cadet)'}}
-              onClick={(e) => e.stopPropagation()}
-            >
-              View Assets (Drive)
-            </a>
+            
+            {/* Dynamically rendered only if valid assets exist */}
+            {hasAssets && (
+              <a
+                href={project.googleDriveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-5 py-2 rounded-full font-semibold transition-transform duration-300 hover:scale-105"
+                style={{backgroundColor: 'var(--orange-web)', color: 'var(--space-cadet)'}}
+                onClick={(e) => e.stopPropagation()}
+              >
+                View Assets (Drive)
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -6,8 +6,9 @@ import ProjectCard from '@/components/ProjectCard';
 
 export default function ProjectsPage() {
   const [openCardId, setOpenCardId] = useState<string | null>(null);
+  const [isInitialized, setIsInitialized] = useState(false);
 
-  // This useEffect runs only once on initial page load to handle the link from the homepage
+  // Handles reading the hash link from the homepage on mount
   useEffect(() => {
     const hash = window.location.hash.substring(1);
     if (hash) {
@@ -19,19 +20,19 @@ export default function ProjectsPage() {
         }, 100);
       }
     }
+    setIsInitialized(true);
   }, []);
 
-  // ==> NEW CODE BLOCK <==
-  // This new useEffect runs whenever the openCardId changes
+  // Updates the browser hash when a card is manually opened or closed
   useEffect(() => {
-    // If a card is open, update the URL hash to match its ID
+    if (!isInitialized) return; // Block execution until initial mount check finishes
+
     if (openCardId) {
       window.history.replaceState(null, '', `#${openCardId}`);
     } else {
-      // If no card is open, remove the hash from the URL
       window.history.replaceState(null, '', window.location.pathname);
     }
-  }, [openCardId]); // The dependency array ensures this runs only when openCardId changes
+  }, [openCardId, isInitialized]);
 
   const handleToggle = (projectId: string) => {
     setOpenCardId(openCardId === projectId ? null : projectId);
