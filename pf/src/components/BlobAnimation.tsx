@@ -7,10 +7,13 @@ const BlobAnimation = () => {
     const handleMouseMove = (event: MouseEvent) => {
       const { clientX, clientY } = event;
       
-      // FIX: Changed from generic parameter to type assertion to satisfy strict TypeScript builds
-      const blobs = document.querySelectorAll('.blob') as NodeListOf<HTMLDivElement>;
+      // Grab elements as standard DOM nodes
+      const blobs = document.querySelectorAll('.blob');
       
-      blobs.forEach(blob => {
+      blobs.forEach(element => {
+        // Safe type cast inline so TypeScript guarantees access to the .style object
+        const blob = element as HTMLElement;
+        
         const { left, top, width, height } = blob.getBoundingClientRect();
         const centerX = left + width / 2;
         const centerY = top + height / 2;
