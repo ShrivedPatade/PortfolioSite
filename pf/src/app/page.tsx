@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="container mx-auto px-4 pt-32 pb-16">
       <div className="space-y-16">
-        {/* SECTION 1: ABOUT ME (Updated) */}
+        {/* SECTION 1: ABOUT ME */}
         <section
           id="about"
           className="p-8 rounded-lg shadow-2xl"
@@ -15,7 +15,6 @@ export default function Home() {
             Shrived Patade
           </h2>
           <div className="space-y-3 text-lg" style={{ color: 'var(--ghost-white)' }}>
-            {/* ==> NEW DESCRIPTION <== */}
             <p>
               I am a dedicated AI & Machine Learning Engineer currently completing my B-Tech in Computer Engineering with a specialization in AIML at Vidyalankar Institute of Technology.
             </p>
@@ -60,7 +59,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ==> NEW CONTACT SECTION <== */}
+        {/* CONTACT SECTION */}
         <section
           id="contact"
           className="p-8 rounded-lg shadow-2xl text-center"
@@ -69,19 +68,22 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--orange-web)' }}>
             Get In Touch
           </h2>
+          
+          {/* Fixed line below: wrapped contraction string using curly braces safely */}
           <p className="text-lg mb-6" style={{ color: 'var(--periwinkle)' }}>
-            I'm always open to discussing new projects or opportunities.
+            {"I'm always open to discussing new projects or opportunities."}
           </p>
+          
           <div className="flex justify-center items-center gap-6">
             <a 
-              href="mailto:shrivedpatade@gmail.com" 
+              href="mailto:your.email@example.com" 
               className="inline-block px-5 py-2 rounded-full font-semibold transition-transform duration-300 hover:scale-105"
               style={{backgroundColor: 'var(--orange-web)', color: 'var(--space-cadet)'}}
             >
               Email Me
             </a>
             <a 
-              href="https://www.linkedin.com/in/shrived-patade-313b66255/" 
+              href="https://www.linkedin.com/in/your-profile" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block px-5 py-2 rounded-full font-semibold transition-transform duration-300 hover:scale-105"
