@@ -6,7 +6,9 @@ const BlobAnimation = () => {
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
       const { clientX, clientY } = event;
-      const blobs = document.querySelectorAll<HTMLDivElement>('.blob');
+      
+      // FIX: Changed from generic parameter to type assertion to satisfy strict TypeScript builds
+      const blobs = document.querySelectorAll('.blob') as NodeListOf<HTMLDivElement>;
       
       blobs.forEach(blob => {
         const { left, top, width, height } = blob.getBoundingClientRect();
