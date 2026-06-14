@@ -8,7 +8,7 @@ export const projectsData = [
     shortDescription: "A system to translate English text to Sanskrit using machine learning.",
     detailedDescription: "Designed and implemented a machine translation system that converts English text to Sanskrit, preserving the semantic meaning and cultural context with Multi-Head Cross Attention. This project leverages VAE transformer architecture and a comprehensive bilingual corpus for training.",
     techStack: ["Python", "Pytorch", "NLP", "Neural Networks", "Transformer", "Seq2Seq", "Bilingual Corpus", "BLEU Score", "Encoder-Decoder Architecture", "Multi-Head Cross Attention Mechanism"],
-    googleDriveLink: "https://drive.google.com/drive/folders/1U2ZE259qTGQ_Y_l8eTRAoODuVHaFzlQ9?usp=sharing",
+    assetsLink: "https://drive.google.com/drive/folders/1U2ZE259qTGQ_Y_l8eTRAoODuVHaFzlQ9?usp=sharing",
     githubLink: "https://github.com/ShrivedPatade/Machine_Translation_NN",
   },
   {
@@ -17,8 +17,9 @@ export const projectsData = [
     shortDescription: "A robust system to detect forged signatures using machine learning.",
     detailedDescription: "Architected and evaluated CNN, SVM, and Random Forest architectures to develop a high-accuracy signature verification system. Engineered a matching pipeline to detect proxy signatures and identify forgeries for attendance tracking applications.",
     techStack: ["Python", "TensorFlow", "OpenCV", "Scikit-learn", "CNN", "Streamlit"],
-    googleDriveLink: "https://drive.google.com/drive/folders/16_smLQWHs7AHWpcY5WsUxwYsN-RFobZi?usp=sharing",
+    assetsLink: "https://drive.google.com/drive/folders/16_smLQWHs7AHWpcY5WsUxwYsN-RFobZi?usp=sharing",
     githubLink: "https://github.com/ShrivedPatade/Signature-Verification-System",
+    liveDemoLink: "https://huggingface.co/spaces/ShrivedPatade/Signature-Verification-System-Space",
   },
   {
     id: createId("Malware Reverse Engineering with LLM Support"),
@@ -26,7 +27,6 @@ export const projectsData = [
     shortDescription: "An automated system to analyze malware executables using LLMs.",
     detailedDescription: "Reverse engineers a Malware executable file by translating it from Machine Code to ‘C’ with Ghidra and analysing the code for possible kill switches & harmful API calls with LLM (Gemini 2.5 flash / Local Qwen2.5)",
     techStack: ["Python", "Reverse Engineering", "Malware Analysis", "LLM", "NLP", "Ghidra", "API", "Client-Server Architecture", "Flask", "React", "Gemini 2.5 flash", "Local Qwen2.5"],
-    googleDriveLink: "your-google-drive-link-here",
     githubLink: "https://github.com/Maaroof-Khan10/Ghidra-LLM-Assistant",
   },
   {
@@ -35,7 +35,6 @@ export const projectsData = [
     shortDescription: "A real-time sign language detection application using computer vision.",
     detailedDescription: "Developed a computer vision-based application to detect and interpret sign language in real-time. This project utilizes CNN models and the MediaPipe framework for hand tracking and gesture recognition, aiming to bridge communication gaps.",
     techStack: ["Python", "OpenCV", "MediaPipe", "CNN", "Random Forest"],
-    googleDriveLink: "your-google-drive-link-here",
     githubLink: "https://github.com/ShrivedPatade/Sign-Language-Detection",
   },
   {
@@ -44,7 +43,7 @@ export const projectsData = [
     shortDescription: "An interactive chatbot for real-time stock analysis and insights.",
     detailedDescription: "Created a conversational AI chatbot that provides users with real-time stock analysis, news, and performance metrics. This project integrates financial data APIs with natural language processing to deliver actionable insights in an intuitive chat interface.",
     techStack: ["Python", "NLP", "Financial APIs", "React"],
-    googleDriveLink: "your-google-drive-link-here",
+    liveDemoLink: "https://huggingface.co/spaces/ShrivedPatade/Stock-Analysis-and-Prediction-LLM",
     githubLink: "https://github.com/ShrivedPatade/Stock-Analysis-Chatbot",
   },
   {
@@ -53,7 +52,6 @@ export const projectsData = [
     shortDescription: "A system that detects objects in a room and provides information through a chatbot interface.",
     detailedDescription: "2-Level Multimodal Architecture with 'Fast Eyes(YOLO-World)' for periodically scanning multiple rooms and maintaining object location memory, and 'Slow Eyes(moondream1.8b VLM)' for on demand detailed analysis. The system can answer user queries about the objects in the room, their locations, last seen timings and details about them.",
     techStack: ["Python", "OpenCV", "NLP", "ChatBot", "Multimodal", "YOLO-World", "VLM", "moondream1.8b", "Local qwen2.5", "Flask"],
-    googleDriveLink: "your-google-drive-link-here",
     githubLink: "https://github.com/ShrivedPatade/YOLO_Room_Obj_Detection_ChatBot_Support",
   },
   {
@@ -62,8 +60,7 @@ export const projectsData = [
     shortDescription: "An implementation of the Alpha-Beta pruning algorithm for optimal Tic Tac Toe gameplay.",
     detailedDescription: "Developed an AI-based Tic Tac Toe game using the Alpha-Beta pruning algorithm to achieve optimal move selection. The system evaluates all possible moves and selects the best one based on the minimax decision-making process.",
     techStack: ["React", "JavaScript", "CSS", "Algorithms", "AI", "Alpha-Beta Pruning","Game Development"],
-    googleDriveLink: "your-google-drive-link-here",
-    websiteLink: "https://shrivedpatade.github.io/Tic-Tac-Toe/",
+    liveDemoLink: "https://shrivedpatade.github.io/Tic-Tac-Toe/",
     githubLink: "https://github.com/ShrivedPatade/Tic-Tac-Toe",
   },
 ];
