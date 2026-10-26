@@ -3,13 +3,12 @@ const createId = (title: string) => title.toLowerCase().replace(/\s+/g, '-');
 
 export const projectsData = [
   {
-    id: createId("Machine Translation System Eng to Sanskrit"),
-    title: "Machine Translation System Eng to Sanskrit",
-    shortDescription: "A system to translate English text to Sanskrit using machine learning.",
-    detailedDescription: "Designed and implemented a machine translation system that converts English text to Sanskrit, preserving the semantic meaning and cultural context with Multi-Head Cross Attention. This project leverages VAE transformer architecture and a comprehensive bilingual corpus for training.",
-    techStack: ["Python", "Pytorch", "NLP", "Neural Networks", "Transformer", "Seq2Seq", "Bilingual Corpus", "BLEU Score", "Encoder-Decoder Architecture", "Multi-Head Cross Attention Mechanism"],
-    assetsLink: "https://drive.google.com/drive/folders/1U2ZE259qTGQ_Y_l8eTRAoODuVHaFzlQ9?usp=sharing",
-    githubLink: "https://github.com/ShrivedPatade/Machine_Translation_NN",
+    id: createId("Malware Reverse Engineering with LLM Support"),
+    title: "Malware Reverse Engineering with LLM Support",
+    shortDescription: "An automated system to analyze malware executables using LLMs.",
+    detailedDescription: "Reverse engineers a Malware executable file by translating it from Machine Code to ‘C’ with Ghidra and analysing the code for possible kill switches & harmful API calls with LLM (Gemini 2.5 flash / Local Qwen2.5)",
+    techStack: ["Python", "Reverse Engineering", "Malware Analysis", "LLM", "NLP", "Ghidra", "API", "Client-Server Architecture", "Flask", "React", "Gemini 2.5 flash", "Local Qwen2.5"],
+    githubLink: "https://github.com/Maaroof-Khan10/Ghidra-LLM-Assistant",
   },
   {
     id: createId("Signature Verification System"),
@@ -22,12 +21,21 @@ export const projectsData = [
     liveDemoLink: "https://huggingface.co/spaces/ShrivedPatade/Signature-Verification-System-Space",
   },
   {
-    id: createId("Malware Reverse Engineering with LLM Support"),
-    title: "Malware Reverse Engineering with LLM Support",
-    shortDescription: "An automated system to analyze malware executables using LLMs.",
-    detailedDescription: "Reverse engineers a Malware executable file by translating it from Machine Code to ‘C’ with Ghidra and analysing the code for possible kill switches & harmful API calls with LLM (Gemini 2.5 flash / Local Qwen2.5)",
-    techStack: ["Python", "Reverse Engineering", "Malware Analysis", "LLM", "NLP", "Ghidra", "API", "Client-Server Architecture", "Flask", "React", "Gemini 2.5 flash", "Local Qwen2.5"],
-    githubLink: "https://github.com/Maaroof-Khan10/Ghidra-LLM-Assistant",
+    id: createId("Room Object Detection System with ChatBot"),
+    title: "Room Object Detection System with ChatBot",
+    shortDescription: "A system that detects objects in a room and provides information through a chatbot interface.",
+    detailedDescription: "2-Level Multimodal Architecture with 'Fast Eyes(YOLO-World)' for periodically scanning multiple rooms and maintaining object location memory, and 'Slow Eyes(moondream1.8b VLM)' for on demand detailed analysis. The system can answer user queries about the objects in the room, their locations, last seen timings and details about them.",
+    techStack: ["Python", "OpenCV", "NLP", "ChatBot", "Multimodal", "YOLO-World", "VLM", "moondream1.8b", "Local qwen2.5", "Flask"],
+    githubLink: "https://github.com/ShrivedPatade/YOLO_Room_Obj_Detection_ChatBot_Support",
+  },
+  {
+    id: createId("Machine Translation System Eng to Sanskrit"),
+    title: "Machine Translation System Eng to Sanskrit",
+    shortDescription: "A system to translate English text to Sanskrit using machine learning.",
+    detailedDescription: "Designed and implemented a machine translation system that converts English text to Sanskrit, preserving the semantic meaning and cultural context with Multi-Head Cross Attention. This project leverages VAE transformer architecture and a comprehensive bilingual corpus for training.",
+    techStack: ["Python", "Pytorch", "NLP", "Neural Networks", "Transformer", "Seq2Seq", "Bilingual Corpus", "BLEU Score", "Encoder-Decoder Architecture", "Multi-Head Cross Attention Mechanism"],
+    assetsLink: "https://drive.google.com/drive/folders/1U2ZE259qTGQ_Y_l8eTRAoODuVHaFzlQ9?usp=sharing",
+    githubLink: "https://github.com/ShrivedPatade/Machine_Translation_NN",
   },
   {
     id: createId("Sign Language Detector"),
@@ -45,14 +53,6 @@ export const projectsData = [
     techStack: ["Python", "NLP", "Financial APIs", "React"],
     liveDemoLink: "https://huggingface.co/spaces/ShrivedPatade/Stock-Analysis-and-Prediction-LLM",
     githubLink: "https://github.com/ShrivedPatade/Stock-Analysis-Chatbot",
-  },
-  {
-    id: createId("Room Object Detection System with ChatBot"),
-    title: "Room Object Detection System with ChatBot",
-    shortDescription: "A system that detects objects in a room and provides information through a chatbot interface.",
-    detailedDescription: "2-Level Multimodal Architecture with 'Fast Eyes(YOLO-World)' for periodically scanning multiple rooms and maintaining object location memory, and 'Slow Eyes(moondream1.8b VLM)' for on demand detailed analysis. The system can answer user queries about the objects in the room, their locations, last seen timings and details about them.",
-    techStack: ["Python", "OpenCV", "NLP", "ChatBot", "Multimodal", "YOLO-World", "VLM", "moondream1.8b", "Local qwen2.5", "Flask"],
-    githubLink: "https://github.com/ShrivedPatade/YOLO_Room_Obj_Detection_ChatBot_Support",
   },
   {
     id: createId("Alpha-Beta Pruning Tic Tac Toe"),
