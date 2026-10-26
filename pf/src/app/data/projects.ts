@@ -21,6 +21,14 @@ export const projectsData = [
     liveDemoLink: "https://huggingface.co/spaces/ShrivedPatade/Signature-Verification-System-Space",
   },
   {
+    id: createId("Optimized On Desktop Minimal To-Do"),
+    title: "Optimized On Desktop Minimal To-Do",
+    shortDescription: "Fully efficient and optimized To-Do app to sit idle on desktop",
+    detailedDescription: "An optimized minimal To-Do app that remains idle on the desktop with out consuming high resouces and computation, maintaining high performane of the Device",
+    techStack: ["Python", "Tkinter", "Sqlite3", "Database"],
+    githubLink: "https://github.com/ShrivedPatade/On-Desktop-Minimal-To-Do",
+  },
+  {
     id: createId("Room Object Detection System with ChatBot"),
     title: "Room Object Detection System with ChatBot",
     shortDescription: "A system that detects objects in a room and provides information through a chatbot interface.",
